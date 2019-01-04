@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="scriptsAgent.TeamPerformance"/>
+      <class name="scriptsAgent.Mytickets"/>
+      <class name="scriptsAgent.Addcategoy"/>
+      <class name="scriptsAgent.DashboardUnassigned"/>
+      <class name="scriptsAgent.AddArticle"/>
+      <class name="scriptsAgent.Users"/>
+      <class name="scriptsAgent.userorganisations"/>
+      <class name="scriptsAgent.ActivityDownloads"/>
+      <class name="scriptsAgent.AgentPerformance"/>
+      <class name="scriptsAgent.ToolsCannedresponses"/>
+      <class name="scriptsAgent.AllCategory"/>
+      <class name="scriptsAgent.DepartmentPerformance"/>
+      <class name="scriptsAgent.TopcustomerAnalysis"/>
+      <class name="scriptsAgent.Allarticles"/>
+      <class name="scriptsAgent.Duetoday"/>
+      <class name="scriptsAgent.toolsknowledgebase"/>
+      <class name="scriptsAgent.ManagementReport"/>
+      <class name="scriptsAgent.article"/>
+      <class name="scriptsAgent.ticketvolumetrend"/>
+      <class name="scriptsAgent.addarticletemplates"/>
+      <class name="scriptsAgent.SatisfactionSurvey"/>
+      <class name="scriptsAgent.TimesheetSummary"/>
+      <class name="scriptsAgent.overdue"/>
+      <class name="scriptsAgent.testadmin"/>
+      <class name="scriptsAgent.Allarticletemplates"/>
+      <class name="scriptsAgent.helpdesk"/>
+      <class name="scriptsAgent.reportpages"/>
+      <class name="scriptsAgent.Page"/>
+      <class name="scriptsAgent.Dashboard"/>
+      <class name="scriptsAgent.PerformanceDistribution"/>
+      <class name="scriptsAgent.Categories"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -26,32 +26,128 @@ public class Basepage1
 		try
 		{
 			wait.until(ExpectedConditions.visibilityOf(element));
-			//driver.findElement(By.xpath("//a[text()='Admin Panel']"));
-			Reporter.log("element is displayed",true);
+			Reporter.log("the admin is verified",true);
 			Thread.sleep(2000);
 		}
 		catch(Exception e)
 		{
-			Reporter.log("element not displayed", true);
+			Reporter.log("The admin is unverified", true);
 			Assert.fail();
 		}
 	}
-		public void titlewait(String title)
+	public void elementvisiblity1(WebElement element)
+	{
+		WebDriverWait wait=new WebDriverWait(driver,10);
+		try
 		{
-			WebDriverWait wait=new WebDriverWait(driver, 10);
-			try
-			{
-			wait.until(ExpectedConditions.titleContains(title));
-			Reporter.log("title is matching", true);
-			}
-			catch(Exception e)
-			{
-				Reporter.log("title is not matching", true);
-				Assert.fail();
-			}
+			wait.until(ExpectedConditions.visibilityOf(element));
+			Reporter.log("the admin is verified",true);
+			Thread.sleep(2000);
+		}
+		catch(Exception e)
+		{
+			Reporter.log("The admin is unverified", true);
+			Assert.fail();
+		}
+	}
+	public void elementvisiblityban(WebElement element)
+	{
+		WebDriverWait wait=new WebDriverWait(driver,10);
+		try
+		{
+			wait.until(ExpectedConditions.visibilityOf(element));
+			Reporter.log("the admin is BAN!! or DEACTIVATED!!!",true);
+			Thread.sleep(2000);
+		}
+		catch(Exception e)
+		{
+			Reporter.log("The admin is not BAN or DEACTIVATED", true);
+			Assert.fail();
+		}
+	}
+	public void elementvisiblityagent(WebElement element)
+	{
+		WebDriverWait wait=new WebDriverWait(driver,10);
+		try
+		{
+			wait.until(ExpectedConditions.visibilityOf(element));
+			Reporter.log("the agent is verified",true);
+			Thread.sleep(2000);
+		}
+		catch(Exception e)
+		{
+			Reporter.log("The agent is unverified", true);
+			Assert.fail();
+		}
+	}
+	public void elementvisiblityagentban(WebElement element)
+	{
+		WebDriverWait wait=new WebDriverWait(driver,10);
+		try
+		{
+			wait.until(ExpectedConditions.visibilityOf(element));
+			Reporter.log("the agent  is BAN!! or DEACTIVATED!!!",true);
+			Thread.sleep(2000);
+		}
+		catch(Exception e)
+		{
+			Reporter.log("The agent is not BAN or DEACTIVATED", true);
+			Assert.fail();
+		}
+	}
+	public void elementvisiblityuserverified(WebElement element)
+	{
+		WebDriverWait wait=new WebDriverWait(driver,10);
+		try
+		{
+			wait.until(ExpectedConditions.visibilityOf(element));
+			Reporter.log("the user is unverified",true);
+			Thread.sleep(2000);
+		}
+		catch(Exception e)	
+		{    
+			Reporter.log("The user  verified", true);
+			Assert.fail();
+		}
+		
+	}
+ public void userbann(WebElement element) 
+ {
+	 WebDriverWait wait=new WebDriverWait(driver,10);
+		try
+		{
+			wait.until(ExpectedConditions.visibilityOf(element));
+			Reporter.log("the user is ban or deactivated",true);
+			Thread.sleep(2000);
+		}
+		catch(Exception e)	
+		{    
+			Reporter.log("The user is not ban or deactivated", true);
+			Assert.fail();
+		}
+		
+	}
+	 
+ }
 
 
-}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

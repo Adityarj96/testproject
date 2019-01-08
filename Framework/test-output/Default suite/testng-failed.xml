@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="scriptsAgent.ActivityDownloads">
+      <class name="loginscriptviaregister.userdeactivated">
         <methods>
-          <include name="Test12"/>
-          <include name="aftermethod"/>
+          <include name="test"/>
           <include name="beforemethod"/>
+          <include name="aftermethod"/>
         </methods>
-      </class> <!-- scriptsAgent.ActivityDownloads -->
+      </class> <!-- loginscriptviaregister.userdeactivated -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
